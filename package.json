@@ -1,0 +1,46 @@
+{
+  "name": "get-user-mentions",
+  "version": "1.0.0",
+  "description": "Get all @user mentions in a string",
+  "license": "MIT",
+  "repository": "radiovisual/get-user-mentions",
+  "author": {
+    "name": "Michael Wuergler",
+    "email": "wuergler@gmail.com",
+    "url": "numetriclabs.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "users",
+    "user",
+    "mentions",
+    "string",
+    "get",
+    "fetch",
+    "at",
+    "sign",
+    "symbol",
+    "search",
+    "find"
+  ],
+  "devDependencies": {
+    "ava": "^0.8.0",
+    "xo": "^0.12.1"
+  },
+  "xo": {
+    "ignores": [
+      "test.js"
+    ]
+  },
+  "dependencies": {
+    "array-uniq": "^1.0.2"
+  }
+}
