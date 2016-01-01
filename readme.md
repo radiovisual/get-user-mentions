@@ -1,6 +1,6 @@
 # get-user-mentions [![Build Status](https://travis-ci.org/radiovisual/get-user-mentions.svg?branch=master)](https://travis-ci.org/radiovisual/get-user-mentions)
 
-> Get all user mentions in a string.
+> Get all @user mentions in a string.
 
 
 ## Install
