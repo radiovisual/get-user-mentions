@@ -9,7 +9,7 @@ module.exports = function (str, opts) {
 	opts = opts || {};
 	opts.unique = opts.unique || false;
 
-	var users = str.match(/@[a-zA-Z0-9_]+/igm);
+	var users = str.match(/@[a-zA-Z0-9_-\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u00FF]+/igm);
 
 	if (!users) {
 		return [];
@@ -18,6 +18,5 @@ module.exports = function (str, opts) {
 	if (opts.unique) {
 		return arrayUnique(users);
 	}
-
 	return users;
 };

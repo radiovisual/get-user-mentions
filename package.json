@@ -1,6 +1,6 @@
 {
   "name": "get-user-mentions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get all @user mentions in a string",
   "license": "MIT",
   "repository": "radiovisual/get-user-mentions",

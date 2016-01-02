@@ -31,3 +31,11 @@ test('finds unique user mentions', t => {
 test('no matches returns empty array', t => {
 	t.is(fn('hello michael and mark, how are you?').length, 0);
 });
+
+test('finds user mentions in latin-extended character sets', t => {
+	const users = fn('@Düsseldorf, @Köln, @ÁÜãç');
+	t.is(users[0], '@Düsseldorf');
+	t.is(users[1], '@Köln');
+	t.is(users[2], '@ÁÜãç');
+});
+
