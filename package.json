@@ -1,6 +1,6 @@
 {
   "name": "get-user-mentions",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Get all @user mentions in a string",
   "license": "MIT",
   "repository": "radiovisual/get-user-mentions",
@@ -29,7 +29,12 @@
     "sign",
     "symbol",
     "search",
-    "find"
+    "find",
+    "twitter",
+    "username",
+    "name",
+    "screenname",
+    "screen"
   ],
   "devDependencies": {
     "ava": "^0.8.0",
