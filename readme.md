@@ -27,18 +27,22 @@ userMentions('hello @michael and @mark, how are you?');
 
 #### input
 
-Type: `string`
 
-The string you want to search for user mentions
+Type: `string`<br>
+*Required*
+
+The string with usernames you want to search
 
 #### options
+
+Use these options to override the defaults
 
 ##### unique
 
 Type: `boolean`  
 Default: `false`
 
-Removes unique values from the array of user mentions
+Removes duplicate names from the array of user mentions
 
 ##### nameOnly
 
