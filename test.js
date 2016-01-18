@@ -39,3 +39,10 @@ test('finds user mentions in latin-extended character sets', t => {
 	t.is(users[2], '@ÁÜãç');
 });
 
+
+test('allows nameOnly option', t => {
+	const users = fn('hello @michael and @mark, how are you?', {nameOnly:true});
+	t.is(users.length, 2);
+	t.is(users[0], 'michael');
+	t.is(users[1], 'mark');
+});

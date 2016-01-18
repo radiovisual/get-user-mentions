@@ -39,6 +39,13 @@ Default: `false`
 
 Removes unique values from the array of user mentions
 
+##### nameOnly
+
+Type: `boolean`  
+Default: `false`
+
+Returns an array of names **without** the `@` symbol.
+
 ## Known Limitations
 
 - Currently, this module only supports usernames written in the latin unicode character sets. [I am working on ways to support other languages](https://github.com/radiovisual/get-user-mentions/issues/1). 
