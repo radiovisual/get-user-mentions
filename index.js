@@ -21,7 +21,7 @@ module.exports = function (str, opts) {
 
 	if (opts.nameOnly) {
 		return users.map(function (user) {
-			return user.replace('@', '');
+			return user.replace(/^@/, '');
 		});
 	}
 	return users;

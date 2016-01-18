@@ -46,3 +46,10 @@ test('allows nameOnly option', t => {
 	t.is(users[0], 'michael');
 	t.is(users[1], 'mark');
 });
+
+test('allows underscores in names', t => {
+	const users = fn('hello @mic_hael and @ma_rk, how are you?');
+	t.is(users.length, 2);
+	t.is(users[0], '@mic_hael');
+	t.is(users[1], '@ma_rk');
+});
