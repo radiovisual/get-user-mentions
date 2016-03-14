@@ -28,8 +28,7 @@ userMentions('hello @michael and @mark, how are you?');
 #### input
 
 
-Type: `string`<br>
-*Required*
+Type: `string`  
 
 The string with usernames you want to search
 
@@ -40,14 +39,14 @@ Use these options to override the defaults
 ##### unique
 
 Type: `boolean`  
-Default: `false`
+Default: `false`  
 
 Removes duplicate names from the array of user mentions
 
 ##### nameOnly
 
 Type: `boolean`  
-Default: `false`
+Default: `false`  
 
 Returns an array of names **without** the `@` symbol.
 
