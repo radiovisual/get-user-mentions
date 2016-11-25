@@ -19,7 +19,7 @@ module.exports = function (str, opts) {
 		return arayUnique(
 			users.map(function (user) {
 				return user.replace(/^@/, '');
-			}
+			})
 		);
 	}
 	
