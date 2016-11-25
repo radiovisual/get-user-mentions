@@ -14,15 +14,15 @@ module.exports = function (str, opts) {
 	if (!users) {
 		return [];
 	}
-	
+
 	if (opts.unique && opts.nameOnly) {
-		return arayUnique(
+		return arrayUnique(
 			users.map(function (user) {
 				return user.replace(/^@/, '');
 			})
 		);
 	}
-	
+
 	if (opts.unique) {
 		return arrayUnique(users);
 	}
