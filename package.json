@@ -40,12 +40,8 @@
     "ava": "^0.8.0",
     "xo": "^0.12.1"
   },
-  "xo": {
-    "ignores": [
-      "test.js"
-    ]
-  },
   "dependencies": {
-    "array-uniq": "^1.0.2"
+    "array-uniq": "^1.0.2",
+    "ava": "^0.8.0"
   }
 }
