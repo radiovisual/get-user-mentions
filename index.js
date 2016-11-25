@@ -15,6 +15,14 @@ module.exports = function (str, opts) {
 		return [];
 	}
 
+	if (opts.unique && opts.nameOnly) {
+		return arrayUnique(
+			users.map(function (user) {
+				return user.replace(/^@/, '');
+			})
+		);
+	}
+
 	if (opts.unique) {
 		return arrayUnique(users);
 	}
